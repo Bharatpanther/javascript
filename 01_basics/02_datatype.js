@@ -27,3 +27,5 @@ console.log(typeof(19))
 console.log(typeof null); // is an object 
 console.log(typeof undefined); // is an undefined
 
+
+
