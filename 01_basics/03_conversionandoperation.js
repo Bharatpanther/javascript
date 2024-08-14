@@ -28,7 +28,7 @@ let bb = Number(b)
 console.log(bb);
 
 
-//                              ****3****                     
+//                              ****4****                     
 let c = true 
 console.log(typeof c);
 let cc = Number(c)
@@ -43,5 +43,57 @@ null = 0
 undefined = NaNt
 
 */
- 
- 
+
+//                              ****5****                     
+// to boolean
+// number to boolean
+let isLoggedIn  = "harsh"
+let toBoolean = Boolean(isLoggedIn)
+console.log(toBoolean);
+
+/* 1 => true
+"" => false
+"Harsh" => true
+*/   
+
+
+//                              ****6****                     
+// number to string
+let tr =  33
+let tyr = String(tr)
+console.log(tyr);
+
+
+
+//     *********************** Operation *********************
+let value = 3
+let negValue  = -value
+// console.log(negValue);
+
+/* console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2/2);
+console.log(2%2);
+console.log(2**3);
+*/
+
+let str1 = "hello "
+let str2 = "Dear"
+console.log(str1 + str2);
+
+
+
+console.log("1" + 2 ); // string  output = 12
+console.log(1 + "2" ); // string  output = 12
+console.log("1" + 2 + 2 ); // string  output =122 
+console.log(1 + 2 + "3");  //string  output = 33            
+
+
+
+
+
+
+
+
+
