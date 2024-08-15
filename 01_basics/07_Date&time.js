@@ -23,6 +23,14 @@ console.log(myCreatedate.getTime()); // output : 1005350400000
 
 
 // *********** convert into seconds ******************
+console.log(Math.floor(myTimestamp/1000)); // 1st method when you store date.now() in variable
+console.log(Math.floor(Date.now()/1000));  // 2nd method 
+
+// ******* more methods *********
+/*
+    getDate() , getMonth(), getDay(), getTime()
+*/
+
 
 
 
