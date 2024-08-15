@@ -24,7 +24,9 @@ console.log(hundreds.toLocaleString('en-IN'));
 /* math is an object in js  */
 
 console.table([Math.PI, Math.abs(-5), Math.round(25.54),Math.ceil(4.2),Math.floor(4.5)]);
-console.table([Math.min(4,5,1,2,3,9,11), Math.random()]) 
+console.table([Math.min(4,5,1,2,3,9,11), Math.random(), (Math.random()*10) + 1,Math.floor((Math.random()*10) + 1)]) 
+console.log(Math.floor(Math.random()*(max-min + 1)) + min);
+
 /* 
 math.random gives no in betweeen 0 - 9 
 */
