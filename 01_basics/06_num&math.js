@@ -1,3 +1,5 @@
+// ******************* numbers ********************
+
 const score = 400 // type number
 const balance = new Number(100)
 // console.table([score, balance]) 
@@ -17,3 +19,12 @@ console.log(running.toPrecision(3))
 
 const hundreds = 1000000
 console.log(hundreds.toLocaleString('en-IN'));
+
+// ******************* math ********************
+/* math is an object in js  */
+
+console.table([Math.PI, Math.abs(-5), Math.round(25.54),Math.ceil(4.2),Math.floor(4.5)]);
+console.table([Math.min(4,5,1,2,3,9,11), Math.random()]) 
+/* 
+math.random gives no in betweeen 0 - 9 
+*/
