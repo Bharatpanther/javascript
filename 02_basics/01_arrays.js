@@ -22,5 +22,22 @@ myArr2[5] ="ghanshyam";
 // console.log(myAry2);
 
 
+// ***************   slice *******************
+console.log("A" , myArr)
+const mny1 = myArr.slice(1,3)
+
+console.log(mny1)
+console.log("B" , myArr);
+
+
+const mny2 = myArr.splice(1,3)
+
+console.log(mny2)
+console.log("c" , myArr);
+
+
+
+
+
 
 
