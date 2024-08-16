@@ -47,6 +47,15 @@ const user = [
         name : "Harshit"
     },
 ]
-user[0]["id"]["name"]
 
+const k = user[0].name
+console.log(k);
+
+
+
+//***********accesss specifies array from multiple arrays ****************
+console.log(Object.keys(Tinderuser));
+console.log(Object.values(Tinderuser));
+console.log(Object.entries(Tinderuser));
+console.log(Tinderuser.hasOwnProperty('name'));
 
