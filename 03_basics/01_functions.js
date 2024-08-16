@@ -28,6 +28,7 @@ addTwoNum(5,null) // output : 5
 */
 
 
+/*
 function addTwoNum(num1, num2) {
     let result = num1 + num2
     console.log("Harshvardhan");
@@ -38,3 +39,17 @@ function addTwoNum(num1, num2) {
 
 const result = addTwoNum(5,6)
 console.log("Result : ", result);
+
+*/
+
+
+function loginuserName(username = "Hari") {
+    if(!username){
+        console.log("please enter the user name");
+        return ;
+        
+    }
+    return `${username} just logged in `
+}
+console.log(loginuserName("kamal Thakur"))
+
