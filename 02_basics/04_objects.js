@@ -34,7 +34,7 @@ const obj3 = Object.assign({},obj1,obj2,obj4)
 
 //2. using assing methods
 const obj5  = {...obj1,...obj2,...obj4}
-console.log(obj5);
+// console.log(obj5);
 
 // when data come form database, it is in the form of arary of object
 const user = [
@@ -48,14 +48,28 @@ const user = [
     },
 ]
 
-const k = user[0].name
-console.log(k);
+// const k = user[0].name
+// console.log(k);
 
 
 
 //***********accesss specifies array from multiple arrays ****************
-console.log(Object.keys(Tinderuser));
-console.log(Object.values(Tinderuser));
-console.log(Object.entries(Tinderuser));
-console.log(Tinderuser.hasOwnProperty('name'));
+// console.log(Object.keys(Tinderuser));
+// console.log(Object.values(Tinderuser));
+// console.log(Object.entries(Tinderuser));
+// console.log(Tinderuser.hasOwnProperty('name'));
 
+
+// object de-structureing 
+const course = {
+    coursename : "javascript",
+    price : 1245,
+    courseinstructure : "harshvardhan"
+}
+
+// k = course["courseinstructure"]
+
+// important menhod
+// const {courseinstructure} = course  
+const {courseinstructure: instructor} = course // here change the name of key now name is instructor
+console.log(instructor);
