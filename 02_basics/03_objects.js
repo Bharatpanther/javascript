@@ -20,7 +20,7 @@ const jsUser = { name : "hitesh",
 // console.log(jsUser.name); // for access objects properties use . operator before key
 
 // 2nd method  
-// console.log(jsUser["name", "age", "full name", "email", "location"]);
+// console.log(jsUser["name"]);
 // console.log(jsUser["full name"]);
 
 
@@ -46,3 +46,4 @@ jsUser.greetingTwo = function() {
 // console.log(jsUser.greeting); // outuput : Function (anonymous)]
 console.log(jsUser.greeting()); // outuput :hello world good morning
 console.log(jsUser.greetingTwo()); // outuput :hello hitesh good morning
+
