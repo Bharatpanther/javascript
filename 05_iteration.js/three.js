@@ -35,9 +35,12 @@ map.set('Hr', 'Haryana')
 
 // how to apply for of loop in map 
 for (const key of map) {
-    console.log(key);   
+    // console.log(key);   
     
 }
+
+
+
 /*
 //  it's give an array 
 [ 'Rj', 'Rajasthan' ]
@@ -49,7 +52,20 @@ for (const key of map) {
 
 
 for (const [key,value] of map) {
-    console.log(key , ':-' , value);
-    
-    
+    // console.log(key , ':-' , value);
+        
 }
+
+
+/*
+const myObject = {
+    'game1' : "Gta",
+    'game2' : "contra",
+
+}
+//map is iterable, but object is not iterable 
+for (const key of myObject) {
+    console.log(key);  
+}
+*/
+
