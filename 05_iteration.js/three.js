@@ -39,8 +39,6 @@ for (const key of map) {
     
 }
 
-
-
 /*
 //  it's give an array 
 [ 'Rj', 'Rajasthan' ]
