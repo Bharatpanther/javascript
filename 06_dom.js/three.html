@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child or code</title>
+</head>
+<body style="background-color: #212121; color: #fff;"> 
+    
+</body>
+    <script>
+        const div = document.createElement('div') //it creates div element <div></div>
+        console.log(div);
+        //add id and clssname in created element
+        div.className = "main"
+        div.id = "myid"
+
+        //set Attribute  (always gives in key-value pair)
+        div.setAttribute("title","generate")
+
+        //add styleing
+        div.style.color="orange"
+        div.style.backgroundColor="purple"
+        div.style.padding = "10px"
+        // div.innerText = "chai or code"
+        const addText = document.createTextNode("chai or code")
+        div.appendChild(addText)
+
+
+        //append to body for visualization
+        document.body.appendChild(div)
+
+
+        const h1 = document.createElement('h1') //it creates div element <div></div>
+        console.log(h1);
+
+    </script>
+</html>
