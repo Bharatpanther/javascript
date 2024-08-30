@@ -22,9 +22,51 @@
             <li><img width="200px" id="owl" height="150px"
                     src="https://i.natgeofe.com/n/d5863c64-a28c-4e30-9ee8-ecc4175e8439/NationalGeographic_2745282_square.jpg"
                     alt=""></li>
-            <li><a href="https://www.google.co.in/" id="Google">google</a></li>
+            <li><a href="https://www.google.co.in/" id="google">google</a></li>
         </ul>
     </div>
 </body>
+<script>
+    /*
+    document.getElementById('japan').onclick = function(){
+        alert('owl clicker')
+    }*/
+
+    // important topics 
+    /* event types, Timestamp, prevent-default,  target, toElement, srcElement, 
+    currentTarget, client position releated:- clientX, clientY, screenX, screenY  
+    altkey, shiftkey,ctrlkey, keycodes etc.*/
+    
+    /*
+    document.getElementById('images').addEventListener('click', function(e){
+     console.log("clicked under ul")
+    },false)
+
+
+    document.getElementById('japan').addEventListener('click', function(e){
+     console.log("this is japan");
+     e.stopPropagation()
+    },false)
+
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        console.log("google is clicked");
+        
+    },false)
+
+    */
+
+   document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeit = e.target.parentNode
+        // removeit.remove();
+        removeit.parentNode.removeChild(removeit);   
+        }
+        
+   },false)
+</script>
 
 </html>
