@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Projects</title>
+</head>
+<body>
+    <h1>code with harsh</h1>
+    <button id="stop">stop</button>
+</body>
+    <script>
+/*
+        setTimeout(function(){
+            console.log("harshvardhan Samariya");          
+        },2000)
+*/
+
+/*
+        //call by function referance
+        let sayHarsh = function(){
+            console.log("call by function referance");
+        }
+
+        setTimeout(sayHarsh, 5000)
+*/
+
+/*
+        let hello = function(){
+            document.querySelector('h1').innerText = "best javascript channel"
+        }
+        setTimeout(hello, 5000)
+*/
+
+        let changeText = function(){
+            document.querySelector('h1').innerText = "best javascript channel"
+        }
+        let stopChanged = setTimeout(changeText, 2000)
+
+        document.querySelector('#stop').addEventListener('click', 
+            function(e){
+                e.preventDefault()
+                clearTimeout(stopChanged)
+                console.log('stopped execution');
+                
+            }
+        )
+    </script>
+</html>
