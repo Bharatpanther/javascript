@@ -20,5 +20,12 @@ Value	State	              Description
     const requestUrl = 'https://api.github.com/users/Bharatpanther'
     const xhr = new XMLHttpRequest();
     xhr.open('Get', requestUrl)
+    xhr.onreadystatechange = ( ) => {
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            console.log(this.responseText);
+        }
+    }
+    xhr.send()
 </script>
 </html>
